@@ -9,6 +9,10 @@
     initial-scale="1.0">
     <title>Tove Jansson</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
 <nav id="wrapperHeader">
@@ -16,7 +20,7 @@
     <!-- dont use . in files unless it is defining the file type like .png it confuses the computer use a - instead
     not /public/imgs/tovejansson.sign.png but /public/imgs/tovejansson-sign.png
     -->
-        <img class='logo' src="/public/imgs/tovejansson-sign.png" alt="logo" />
+        <a href="https://tovejansson.com/"><img class='logo' src="/public/imgs/tovejansson-sign.png" alt="logo" /></a>
     </div> 
 </nav>
 
@@ -24,10 +28,17 @@
 
 <div class="container">
 
-    <section class="hero"></section>
+    <section class="hero" id="sectionone">
+        <div class="heroContainer">
+            <a href="#sectiontwo"><img src="public/imgs/moominabout.png" class="hvr-bob"></a>
+            <a href="#sectionthree"><img src="public/imgs/littlemyselfportraits.png" class="hvr-bob"></a>
+            <a href="#sectionfour"><img src="public/imgs/snufkinmoomins.png" class="hvr-bob"></a>
+            <a href="#sectionfive"><img src="public/imgs/snorkmaiden2bmi.png" class="hvr-bob"></a>
+        </div>
+    </section>
 
     <section>
-        <div class="title">
+        <div class="title" id="sectiontwo">
             <h1>About</h1>
         </div>
         <div class="col-30 paddingRight">
@@ -36,10 +47,10 @@
             </div>
         </div>
         <div class="col-70">
-            <h2 class="subTitle">Tove Jansson,</h2>
-            <p class="body">is a Finnish author, artist, illustrator and designer.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Id ornare arcu odio ut sem nulla pharetra. Amet nulla facilisi morbi tempus iaculis urna id. Mattis molestie a iaculis at. 
-                Magnis dis parturient montes nascetur ridiculus mus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor
+            <h2 class="subTitle">HEJ! My name is <span class="name">TOVE JANSSON</span>.</h2>
+            <p class="hvr-grow-rotate"><br></br>Born in Helsinki, Finland, I grew up in a family of filled with artists. 
+                My mother was a Swedish-speaking Finnish illustrator and my father was a sculptor. 
+                I was the eldest of four siblings, and I was the only one who pursued a career in the arts. I was a painter, illustrator, and author, but I am best known for creating the Moomins, a family of white, roundish trolls with large snouts that make them resemble hippopotamuses. The Moomins are the central characters in a series of books and a comic strip that I wrote and illustrated, starting in the late 1940s, and which became popular worldwide. 
             </p>
         </div>
     </section>
@@ -48,7 +59,7 @@
 
 
 
-        <div class="title">
+        <div class="title" id="sectionthree">
             <h1>Self portraits</h1>
         </div>
         <div class="imageRow">
@@ -78,7 +89,7 @@
     </section>
 
     <section>
-        <div class="title">
+        <div class="title" id="sectionfour">
             <h1>Moomins</h1>
         </div>
         <div class="imageRow">
@@ -86,7 +97,7 @@
                     <img src="/public/imgs/tove7.jpg" alt="ToveJansson" />
                 </div>
                 <div class=" col-40 imgContainer gallery-item fullHeight" data-index="8">
-                    <img src="/public/imgs/tove2.jpg" alt="ToveJansson" />[]
+                    <img src="/public/imgs/tove2.jpg" alt="ToveJansson" />
                 </div>
                 <div class=" col-30 imgContainer gallery-item fullHeight" data-index="9">
                     <img src="/public/imgs/tove3.jpg" alt="ToveJansson" />
@@ -108,44 +119,62 @@
     </section>
 
     <section>
-        <div class="title">
+        <div class="title" id="sectionfive">
             <h1>Book & Magazine covers</h1>
         </div>
         <div class="imageRow">
-                <div class=" col-30 imgContainer fullHeight">
+                <div class=" col-30 imgContainer gallery-item fullHeight" data-index="13">
                     <img src="/public/imgs/tove4.jpg" alt="ToveJansson" />
                 </div>
-                <div class=" col-40 imgContainer fullHeight">
+                <div class=" col-40 imgContainer gallery-item fullHeight" data-index="14">
                     <img src="/public/imgs/tove5.jpg" alt="ToveJansson" />
                 </div>
-                <div class=" col-30 imgContainer fullHeight">
+                <div class=" col-30 imgContainer gallery-item fullHeight" data-index="15">
                     <img src="/public/imgs/tove8.jpg" alt="ToveJansson" />
                 </div>
             </div>
         <div class="imageRow">
-            <div class=" col-30 imgContainer fullHeight">
+            <div class=" col-30 imgContainer gallery-item fullHeight" data-index="16">
                 <img src="/public/imgs/tove11.jpg" alt="ToveJansson" />
             </div>
-            <div class=" col-40 imgContainer fullHeight">
+            <div class=" col-40 imgContainer gallery-item fullHeight" data-index="17">
                 <img src="/public/imgs/tove6.jpeg" alt="ToveJansson" />
             </div>
-            <div class=" col-30 imgContainer fullHeight">
+            <div class=" col-30 imgContainer gallery-item fullHeight" data-index="18">
                 <img src="/public/imgs/tove12.jpg" alt="ToveJansson" />
             </div>
         </div>
 
     </section>
 
-</div>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/tovejanssonofficial/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/tovejanssonofficial/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/ToveJansson1914"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/MoominOfficial"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>
+                CONTACT:<br>
+                Moomin Characters Oy Ltd</br>
+                Salmisaarenranta 7 M<br>
+                00180 Helsinki, Finland</br>
+                hello@moomin.com<br><br></br>
+                COPYRIGHT © 2024 TOVE JANSSON</br> </p>
+    
+            <a href="#header"><img src="public/imgs/hattifattenergototop.png" class="hvr-bob"></a> </div>
 
+</footer>
 
 <!--javascript-->
+
+<script src="script.js"></script>
 <script>
-<<<<<<< Updated upstream
     const galleryItem= document.getElementsByClassName("gallery-item");
-=======
-    const imageRow= document. getElementsByClassName("imageRow");
->>>>>>> Stashed changes
 
     const lightBoxContainer= document.createElement("div");
     const lightBoxContent= document.createElement("div");
@@ -157,8 +186,7 @@
 
 lightBoxContainer.classList.add("lightbox");
 lightBoxContent.classList.add("lightbox-content");
-lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
-lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+
 
 
 lightBoxContainer.appendChild(lightBoxContent);
@@ -191,16 +219,8 @@ function sliderImage(n){
     showLightBox(index+=n);
 }
 
-function prevImage(){
-    sliderImage(-1);
-}
 
-function nextImage(){
-    sliderImage(1);
-}
 
-lightBoxPrev.addEventListener("click", prevImage);
-lightBoxNext.addEventListener("click", nextImage);
 
 function closeLightBox(){
     if(this ===event.target){

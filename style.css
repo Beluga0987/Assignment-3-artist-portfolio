@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Staatliches&display=swap');
+
 
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -16,20 +18,33 @@ h1{
 }
 
 h2{
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    max-width: 700px;
+    padding-left: 60px;
+}
+
+.name{
+    color:#DCCE4B;
 }
 
 p{
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    max-width: 700px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    max-width: 800px;
+    padding-left: 180px;
+    color:white
 }
 
 nav#wrapperHeader div#header {
-    width:99.2vw;
+    width:98.9vw;
     height:100px;
     background-color: rgb(245, 244, 242);
+    
 }
 
 .logo {
@@ -68,8 +83,27 @@ section:not(:first-of-type){
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-
+    object-fit: contain;
 }
+
+.heroContainer{
+    margin-top: 7%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    padding-top: 350px;
+    width: 100%;
+    height: 100%;
+    padding-left: 80px;
+}
+
+.heroContainer img{
+    width: 80%;
+    height: 80%;
+}
+
+
 
 .title{
     min-width: 100%;
@@ -111,6 +145,7 @@ section:not(:first-of-type){
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-bottom: 3%;
 }
 
 
@@ -167,8 +202,8 @@ section:not(:first-of-type){
 
     .lightbox-content{
         position: relative;
-        width: 65%;
-        height: 58%;
+        width: 80%;
+        height: 80%;
         margin: 5% auto;
         margin-top: 100px;
     }
@@ -176,6 +211,177 @@ section:not(:first-of-type){
     .lightbox-content img{
         width:100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
+
+
+    @media(max-width: 767px){
+        .imgContainer{
+            width: 100%;
+        }
+        .fullHeight{
+            flex-basis: 49.80%;
+            margin-bottom: 3px;
+        }
+        .lightbox-content{
+            width: 80%;
+            height: 60%;
+            margin: 15% auto;
+        }
+    }
+
+
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    footer{
+        background-color: #000;
+    }
+    .footerContainer{
+        width: 100%;
+        padding: 50px 30px 20px ;
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: left;
+    }
+    .socialIcons a{
+        text-decoration: none;
+        padding:  10px;
+        background-color: #DCCE4B;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    .socialIcons a i{
+        font-size: 1.3em;
+        color: black;
+        opacity: 0,9;
+    }
+
+    .socialIcons a:hover{
+        background-color: #000;
+        transition: 0.5s;
+    }
+    .socialIcons a:hover i{
+        color: #DCCE4B;
+        transition: 0.5s;
+    }
+    .footerNav{
+        margin: 30px 0;
+    }
+    
+    .footerBottom{
+        background-color: #000;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        
+    }
+    .footerBottom p{
+        color: #DCCE4B;
+        font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        width:300px;
+        height:300px;
+        padding-left: 50px;
+    }
+
+    .footerBottom img{
+        width: 254px;
+        height: 417px;
+        margin-left: 1000px;
+        justify-content: right;
+    }
+
+    @-webkit-keyframes hvr-bob {
+        0% {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+        }
+        50% {
+          -webkit-transform: translateY(-4x);
+          transform: translateY(-4px);
+        }
+        100% {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes hvr-bob {
+        0% {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+        }
+        50% {
+          -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+        }
+        100% {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+        }
+      }
+      @-webkit-keyframes hvr-bob-float {
+        100% {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes hvr-bob-float {
+        100% {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+        }
+      }
+      .hvr-bob {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      }
+      .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+        -webkit-animation-name: hvr-bob-float, hvr-bob;
+        animation-name: hvr-bob-float, hvr-bob;
+        -webkit-animation-duration: .3s, 1.5s;
+        animation-duration: .3s, 1.5s;
+        -webkit-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
+        -webkit-animation-timing-function: ease-out, ease-in-out;
+        animation-timing-function: ease-out, ease-in-out;
+        -webkit-animation-iteration-count: 1, infinite;
+        animation-iteration-count: 1, infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-direction: normal, alternate;
+        animation-direction: normal, alternate;
+      }
+      
+      .hvr-grow-rotate {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+      }
+      .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+        -webkit-transform: scale(1.1) rotate(4deg);
+        transform: scale(1.1) rotate(4deg);
+      }
+    @media (max-width: 700px){
+        .footerNav ul{
+            flex-direction: column;
+        } 
+
+        .socialIcons a{
+            padding: 8px;
+            margin: 4px;
+        }
+    }
