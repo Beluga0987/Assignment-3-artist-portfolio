@@ -247,12 +247,19 @@ section:not(:first-of-type){
     .socialIcons{
         display: flex;
         justify-content: left;
+        height: 50px;
     }
     .socialIcons a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
+        aspect-ratio: 1/1;
         padding:  10px;
         background-color: #DCCE4B;
         margin: 10px;
+        width: auto;
+        height: 100%;
         border-radius: 50%;
     }
     .socialIcons a i{
